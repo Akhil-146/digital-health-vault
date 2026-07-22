@@ -54,9 +54,9 @@ database
 ## Naming Convention
 
 ```
-V001__Create_Extensions.sql
+V0001__Shared_Create_Extensions.sql
 
-V002__Create_Schemas.sql
+V0002__Shared_Create_Schemas.sql
 
 V101__Create_Master_Role.sql
 ```
