@@ -1,8 +1,10 @@
 -- ==========================================================
 -- Project     : Digital Health Vault
 -- Module      : Master
--- Version     : V158
+-- Version     : V0028
 -- Description : Seed Data in Login Method Table
+-- Author      : Akhil Tandrotu
+-- Created On  : 2026-07-20
 -- ==========================================================
 
 INSERT INTO master.login_method

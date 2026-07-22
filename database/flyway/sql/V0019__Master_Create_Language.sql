@@ -1,21 +1,25 @@
 -- ==========================================================
 -- Project     : Digital Health Vault
 -- Module      : Master
--- Version     : V0013
--- Description : Create Audit Action Table
+-- Version     : V0019
+-- Description : Create Language Table
 -- Author      : Akhil Tandrotu
--- Created On  : 2026-07-20
+-- Created On  : 2026-07-22
 -- ==========================================================
 
-CREATE TABLE master.audit_action
+CREATE TABLE master.language
 (
-    audit_action_code      VARCHAR(100) PRIMARY KEY,
+    language_code          VARCHAR(10) PRIMARY KEY,
 
-    audit_action_name      VARCHAR(150) NOT NULL,
+    language_name          VARCHAR(100) NOT NULL,
+
+    native_name            VARCHAR(100) NOT NULL,
 
     description            VARCHAR(500),
 
     display_order          SMALLINT NOT NULL,
+
+    is_default             BOOLEAN NOT NULL DEFAULT FALSE,
 
     is_active              BOOLEAN NOT NULL DEFAULT TRUE,
 

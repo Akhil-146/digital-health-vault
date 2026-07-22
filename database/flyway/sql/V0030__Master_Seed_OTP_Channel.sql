@@ -1,8 +1,10 @@
 -- ==========================================================
 -- Project     : Digital Health Vault
 -- Module      : Master
--- Version     : V160
+-- Version     : V0030
 -- Description : Seed Data in OTP Channel Table
+-- Author      : Akhil Tandrotu
+-- Created On  : 2026-07-20
 -- ==========================================================
 
 INSERT INTO master.otp_channel

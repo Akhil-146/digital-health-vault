@@ -1,8 +1,10 @@
 -- ==========================================================
 -- Project     : Digital Health Vault
 -- Module      : Master
--- Version     : V157
+-- Version     : V0027
 -- Description : Seed Data in Blood Group Table
+-- Author      : Akhil Tandrotu
+-- Created On  : 2026-07-20
 -- ==========================================================
 
 INSERT INTO master.blood_group

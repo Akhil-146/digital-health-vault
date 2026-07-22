@@ -1,21 +1,23 @@
 -- ==========================================================
 -- Project     : Digital Health Vault
 -- Module      : Master
--- Version     : V0011
--- Description : Create OTP Purpose Table
+-- Version     : V0020
+-- Description : Create Country Table
 -- Author      : Akhil Tandrotu
--- Created On  : 2026-07-20
+-- Created On  : 2026-07-22
 -- ==========================================================
 
-CREATE TABLE master.otp_purpose
+CREATE TABLE master.country
 (
-    otp_purpose_code      VARCHAR(50) PRIMARY KEY,
+    country_code          CHAR(2) PRIMARY KEY,
 
-    otp_purpose_name      VARCHAR(100) NOT NULL,
+    iso3_code             CHAR(3) UNIQUE NOT NULL,
 
-    description           VARCHAR(500),
+    country_name          VARCHAR(100) NOT NULL,
 
     display_order         SMALLINT NOT NULL,
+
+    is_default            BOOLEAN NOT NULL DEFAULT FALSE,
 
     is_active             BOOLEAN NOT NULL DEFAULT TRUE,
 
